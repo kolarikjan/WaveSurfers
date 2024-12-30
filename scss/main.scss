@@ -1,0 +1,27 @@
+/* 
+Theme name: WaveSurfers
+Author: Jan Kolařík
+Author's url: www.kolarikjan.cz
+*/
+
+// Defaults
+@import "default/variables";
+@import "default/resets";
+@import "default/functions";
+@import "default/default";
+
+// Layouts
+@import "layout/header";
+@import "layout/body";
+@import "layout/footer";
+
+// Page Components
+@import "components/hamburger";
+@import "components/button";
+@import "components/form";
+
+// Page Sections
+@import "components/intro";
+@import "components/about";
+@import "components/products";
+@import "components/team";

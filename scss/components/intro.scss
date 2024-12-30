@@ -1,0 +1,39 @@
+.intro {
+    background-color: $darkblue;
+    padding: 3.5rem 0 5rem;
+    @media (max-width: $lg) {
+        padding: 2.25rem 0 3.25rem;
+    }
+    &-text {
+        margin-bottom: 5rem;
+        @media (max-width: $lg) {
+            margin-bottom: 3.25rem;
+        }
+        h1 {
+            color: $white;
+            span {
+                display: block;
+                font-size: 115px;
+                @media (max-width: $lg) {
+                    font-size: 80px;
+                }
+                @media (max-width: $sm) {
+                    font-size: 44px;
+                    line-height: 1.5;
+                }
+            }
+        }
+        p {
+            color: $white;
+            font-size: 36px;
+            line-height: 1.35;
+            @media (max-width: $lg) {
+                font-size: 24px;
+            }
+            @media (max-width: $sm) {
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.footer {
+  padding: 4rem 0 4.5rem;
+}
+.footer-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 10rem;
+}
+.footer-info > div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.footer-info-title {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.footer-info-contact {
+  font-size: 17.5px;
+}
+.footer-info-contact:hover {
+  text-decoration: underline;
+}
+.footer-info-socials {
+  display: flex;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+}
+.footer-info-socials img {
+  max-width: 45px;
+}
+.footer-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer-logo img {
+  max-width: 300px;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,55 @@
+.footer {
+    padding: 4rem 0 4.5rem;
+    @media (max-width: $lg) {
+        padding: 3rem 0;
+    }
+    &-wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem 10rem;
+        @media (max-width: $lg) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &-info {
+        & > div:not(:last-child) {
+            margin-bottom: 2rem;
+            @media (max-width: $lg) {
+                margin-bottom: 1.5rem;
+            }
+        }
+        &-title {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: .5rem;
+        }
+        &-contact {
+            font-size: 17.5px;
+            transition: .15s;
+            &:hover {
+                color: $darkblue;
+            }
+        }
+        &-socials {
+            display: flex;
+            gap: .625rem;
+            flex-wrap: wrap;
+            img {
+                max-width: 45px;
+            }
+        }
+    }
+    &-logo {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @media (max-width: $lg) {
+            position: unset;
+        }
+        img {
+            max-width: 300px;
+        }
+    }
+}

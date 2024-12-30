@@ -1,0 +1,95 @@
+.header {
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    background-color: $darkblue;
+    padding: 1.5rem 0;
+    transition: .25s;
+    &.scrolled {
+        padding: .75rem 0;
+    }
+    @media (max-width: $md) {
+        padding: 1.25rem 0;
+    }
+    &-logo {
+        @media (max-width: $sm) {
+            max-width: 65%;
+        }
+        img {
+            max-height: 55px;
+            max-width: 300px;
+            width: 100%;
+            @media (max-width: $sm) {
+                max-width: 240px;
+            }
+        }
+    }
+    &-nav {
+        justify-content: space-between;
+        gap: 1.5rem;
+        flex-wrap: nowrap;
+        @media (max-width: $xl) {
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+    }
+    &-content {
+        justify-content: flex-end;
+        @media (max-width: $xxl) {
+            order: 2;
+        }
+        @media (max-width: $xl) {
+            background-color: $darkblue;
+            position: absolute;
+            top: 100%;
+            left: -1rem;
+            width: calc(100% + 2rem);
+            z-index: 5;
+            & > *:first-child {
+                padding-top: 1.25rem;
+            }
+            & > *:last-child {
+                padding-bottom: 1.75rem;
+            }
+        }
+    }
+    &-menu {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .75rem 1.5rem;
+        @media (max-width: $xl) {
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 0 1rem;
+        }
+        &-link {
+            position: relative;
+            font-size: rem(16);
+            line-height: rem(22);
+            color: $white;
+            font-weight: 500;
+            transition: .15s;
+            padding: 0;
+            @media (max-width: $xl) {
+                font-weight: 600;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: $white;
+                transition: .15s;
+            }
+            &:hover {
+                color: $white;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

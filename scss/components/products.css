@@ -1,0 +1,13 @@
+.products-text {
+  margin-bottom: 4rem;
+}
+.products-text p {
+  font-size: 46px;
+  line-height: 1.35;
+  font-weight: 400;
+  padding-right: 13.5rem;
+}
+.products-circles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}/*# sourceMappingURL=products.css.map */

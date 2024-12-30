@@ -1,0 +1,47 @@
+.about {
+    background-color: $blue;
+    &-wrapper {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 3rem;
+        @media (max-width: $lg) {  
+            grid-template-columns: 1fr;
+        }
+    }
+    &-text {
+        h2 {
+            color: $white;
+        }
+        p {
+            color: $white;
+            padding-right: 4rem;
+            @media (max-width: $xl) {  
+                padding-right: 0;
+            }
+        }
+        .button-default {
+            margin-top: 2.5rem;
+            min-width: 175px;
+        }
+    }
+    &-image {
+        margin: -1rem 0 -2rem;
+        @media (max-width: $xxl) {
+            margin: 0;
+        }
+        @media (max-width: $lg) {
+            margin-left: -2.675rem;
+        }
+        @media (max-width: $sm) {
+            margin-left: 0;
+            margin-right: 2rem;
+        }
+        img {
+            max-height: 385px;
+            @media (max-width: $xxl) {  
+                height: 100%;
+                object-fit: scale-down;
+            }
+        }
+    }
+}

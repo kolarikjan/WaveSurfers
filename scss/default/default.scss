@@ -1,0 +1,55 @@
+h1, h2, h3, h4, h5, h6 {
+  color: $blue;
+  line-height: 1.1;
+  font-weight: 700;
+}
+body {
+  font-family: $font;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 300;
+  color: $blue;
+  @media (max-width: $lg) {
+    font-size: 16px;
+  }
+}
+h1 {
+  font-size: 75px;
+  margin-bottom: 1rem;
+  @media (max-width: $lg) {
+    font-size: 32px;
+  }
+}
+h2 {
+  font-size: 46px;
+  margin-bottom: 2.5rem;
+  @media (max-width: $lg) {
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
+}
+h3 {
+  font-size: 19px;
+  margin-bottom: 1rem;
+  @media (max-width: $lg) {
+    font-size: 16px;
+  }
+}
+a {
+  color: $blue;
+  text-decoration: none;
+  &:hover {
+    color: $blue;
+  }
+}
+p:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+* {
+  scroll-margin-block: 5.75rem;
+}
