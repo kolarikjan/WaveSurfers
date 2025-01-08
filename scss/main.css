@@ -374,11 +374,17 @@ body {
 
 h1 {
   font-size: 75px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.75rem;
 }
 @media (max-width: 991px) {
   h1 {
-    font-size: 32px;
+    font-size: 34px;
+    margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 390px) {
+  h1 {
+    font-size: 30px;
   }
 }
 
@@ -453,6 +459,7 @@ p:not(:last-child) {
 @media (max-width: 576px) {
   .header-logo img {
     max-width: 240px;
+    max-height: 45px;
   }
 }
 .header-nav {
@@ -730,19 +737,19 @@ p:not(:last-child) {
 
 .intro {
   background-color: #050550;
-  padding: 3.5rem 0 5rem;
+  padding: 5rem 0 6.5rem;
 }
 @media (max-width: 991px) {
   .intro {
-    padding: 2.25rem 0 3.25rem;
+    padding: 3.25rem 0 4.25rem;
   }
 }
 .intro-text {
-  margin-bottom: 5rem;
+  margin-bottom: 6.5rem;
 }
 @media (max-width: 991px) {
   .intro-text {
-    margin-bottom: 3.25rem;
+    margin-bottom: 4.25rem;
   }
 }
 .intro-text h1 {
@@ -754,29 +761,59 @@ p:not(:last-child) {
 }
 @media (max-width: 991px) {
   .intro-text h1 span {
-    font-size: 80px;
+    font-size: 76px;
   }
 }
 @media (max-width: 576px) {
   .intro-text h1 span {
-    font-size: 44px;
+    font-size: 54px;
     line-height: 1.5;
+  }
+}
+@media (max-width: 390px) {
+  .intro-text h1 span {
+    font-size: 44px;
   }
 }
 .intro-text p {
   color: #f2f2f2;
   font-size: 36px;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 @media (max-width: 991px) {
   .intro-text p {
     font-size: 24px;
   }
+  .intro-text p br {
+    display: none;
+  }
 }
 @media (max-width: 576px) {
   .intro-text p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
+  }
+}
+.intro-image {
+  overflow: hidden;
+}
+.intro-image-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  animation: scroll 10s linear infinite;
+}
+.intro-image-container img {
+  flex-shrink: 0;
+  width: auto;
+  height: 100%;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the initial position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move all images to the left */
   }
 }
 
@@ -949,6 +986,11 @@ p:not(:last-child) {
 
 .team {
   background-color: #050550;
+}
+@media (max-width: 576px) {
+  .team-text h2 {
+    text-align: center;
+  }
 }
 .team-wrapper {
   display: grid;

@@ -1,5 +1,10 @@
 .team {
     background-color: $darkblue;
+    &-text h2 {
+        @media (max-width: $sm) {
+            text-align: center;
+        }
+    }
     &-wrapper {
         display: grid;
         grid-template-columns: repeat(5, 1fr);

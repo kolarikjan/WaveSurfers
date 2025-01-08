@@ -15,9 +15,13 @@ body {
 }
 h1 {
   font-size: 75px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.75rem;
   @media (max-width: $lg) {
-    font-size: 32px;
+    font-size: 34px;
+    margin-bottom: 1.25rem;
+  }
+  @media (max-width: $xs) {
+    font-size: 30px;
   }
 }
 h2 {
